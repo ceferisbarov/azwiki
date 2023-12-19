@@ -1,0 +1,7 @@
+*.xml
+*.bz2
+config.py
+processed
+raw
+env
+__pycache__
