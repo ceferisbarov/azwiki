@@ -1,5 +1,9 @@
 # Processing scripts for the `jafarisbarov/azwiki` dataset
 
+**You can find the final dataset [here](https://huggingface.co/datasets/jafarisbarov/azwiki)** 
+  
+
+## Working with the scripts
 Set-up the Python environment:
 ```bash
 python3 -m venv env
