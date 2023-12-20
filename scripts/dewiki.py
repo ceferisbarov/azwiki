@@ -4,7 +4,6 @@ import re
 from html2text import html2text as htt
 import wikitextparser as wtp
 
-MIN_LENGTH = 250
 
 def dewiki(text):
     text = wtp.parse(text).plain_text()  # wiki to plaintext 
@@ -28,8 +27,6 @@ def analyze_chunk(text):
         serial = text.split('<id>')[1].split('</id>')[0]
         content = text.split('</text')[0].split('<text')[1].split('>', maxsplit=1)[1]
         content = dewiki(content)
-        if len(content.strip()) < MIN_LENGTH:
-            return None
         
         return {'title': title.strip(), 'text': content.strip(), 'id': serial.strip()}
     except Exception as oops:

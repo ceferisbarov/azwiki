@@ -1,7 +1,9 @@
 *.xml
 *.bz2
 config.py
-processed
-raw
+processed/*
+raw/*
+!processed/.gitkeep
+!raw/.gitkeep
 env
 __pycache__
