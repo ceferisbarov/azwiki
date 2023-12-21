@@ -1,0 +1,3 @@
+- [ ] Remove file names
+- [ ] Remove references (ISBN, etc.)
+- [ ] Remove English text
