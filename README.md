@@ -14,7 +14,7 @@ pip install -r requirements.txt
 ```
 
 
-Download the latest multistrem version from wiki dumps:
+Download the latest multistream version from wiki dumps:
 ```bash
 # Download
 wget https://dumps.wikimedia.org/azwiki/latest/azwiki-latest-pages-articles-multistream.xml.bz2
@@ -44,3 +44,8 @@ After this, simply run the `hf.py` file to push the dataset to HuggingFace.
 ```bash
 python scripts/hf.py
 ```
+
+## Acknowledgements and contribution
+Original version of the `process.py` script has been developed during the AzCorpus project. `dewiki.py` script has been adapted from this [repository](https://github.com/daveshap/PlainTextWikipedia).
+
+If there is anything to update regarding the dataset, open a PR here, on GitHub. I will update the HuggingFace repo myself.
